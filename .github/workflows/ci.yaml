@@ -21,12 +21,12 @@ jobs:
     - run: |
         go run cmd/saft_request/main.go
       env: 
-        EMAIL_API_KEY=${{ secrets.EMAIL_API_KEY }}
-        EMAIL_CONTENT=${{ secrets.EMAIL_CONTENT }}
-        EMAIL_FROM_NAME=${{ secrets.EMAIL_FROM_NAME }}
-        EMAIL_FROM=${{ secrets.EMAIL_FROM }}
-        EMAIL_TO_NAME=${{ secrets.EMAIL_TO_NAME }}
-        EMAIL_TO=${{ secrets.EMAIL_TO }}
-        EMAIL_SUBJECT=${{ secrets.EMAIL_SUBJECT }}
-        ACCOUNT_NAME=${{ secrets.ACCOUNT_NAME }}
-        API_KEY=${{ secrets.API_KEY }}
+        EMAIL_API_KEY: ${{ secrets.EMAIL_API_KEY }}
+        EMAIL_CONTENT: ${{ secrets.EMAIL_CONTENT }}
+        EMAIL_FROM_NAME: ${{ secrets.EMAIL_FROM_NAME }}
+        EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        EMAIL_TO_NAME: ${{ secrets.EMAIL_TO_NAME }}
+        EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        EMAIL_SUBJECT: ${{ secrets.EMAIL_SUBJECT }}
+        ACCOUNT_NAME: ${{ secrets.ACCOUNT_NAME }}
+        API_KEY: ${{ secrets.API_KEY }}
